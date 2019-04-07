@@ -15,6 +15,10 @@ function Translator() {
 	var Localize = require('../localize');
 	var loc = new Localize(__dirname);
 	this.loc = loc;
+
+	// force set language and locale to en
+	this.lang = 'en'; 
+
 	loc.setLocale(lang);
 	loc.throwOnMissingTranslation(false);
 }
@@ -24,9 +28,12 @@ Translator.prototype.getLanguage = function() {
 };
 
 Translator.prototype.translate = function(str) {
-	if(this.loc) {
-		return this.loc.translate(str);
-	}
+	// if(this.loc) {
+	// 	return this.loc.translate(str);
+	// }
+	
+	// don't translate
+	return str;
 };
 
 module.exports = new Translator();

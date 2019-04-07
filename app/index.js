@@ -191,12 +191,7 @@ if (!app.requestSingleInstanceLock()) {
         let language = app.getLocale();
 
         let title;
-
-        if (language === 'ko') {
-            title = '엔트리 하드웨어 v';
-        } else {
-            title = 'Entry Hardware v';
-        }
+        title = 'NEOBOT&ENTRY Connection Program V';
 
         mainWindow = new BrowserWindow({
             width: 800,

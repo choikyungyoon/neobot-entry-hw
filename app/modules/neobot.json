@@ -1,8 +1,8 @@
 {
 	"id": "050101",
 	"name": {
-		"en": "NEOBOT",
-		"ko": "네오봇"
+		"en": "NEOBOT Edu \n [Dongle Version]",
+		"ko": "네오봇 Edu \n [Dongle Version]"
 	},
 	"category": "module",
 	"platform": ["win32", "darwin"],
