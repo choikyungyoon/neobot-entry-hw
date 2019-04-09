@@ -16,43 +16,43 @@
     var os = process.platform + '-' + (isOSWin64() ? 'x64' : process.arch);
     var driverDefaultPath;
 
-    if (sharedObject.appName === 'hardware' && navigator.onLine) {
-        if (hasNewVersion) {
-            localStorage.removeItem('hasNewVersion');
-            modal
-                .alert(
-                    Lang.Msgs.version_update_msg2.replace(
-                        /%1/gi,
-                        lastCheckVersion
-                    ),
-                    Lang.General.update_title,
-                    {
-                        positiveButtonText: Lang.General.recent_download,
-                        positiveButtonStyle: {
-                            width: '180px',
-                        },
-                    }
-                )
-                .one('click', (event) => {
-                    if (event === 'ok') {
-                        shell.openExternal(
-                            'https://playentry.org/#!/offlineEditor'
-                        );
-                    }
-                });
-        } else {
-            ipcRenderer.on(
-                'checkUpdateResult',
-                (e, { hasNewVersion, version } = {}) => {
-                    if (hasNewVersion && version !== lastCheckVersion) {
-                        localStorage.setItem('hasNewVersion', hasNewVersion);
-                        localStorage.setItem('lastCheckVersion', version);
-                    }
-                }
-            );
-            ipcRenderer.send('checkUpdate');
-        }
-    }
+    // if (sharedObject.appName === 'hardware' && navigator.onLine) {
+    //     if (hasNewVersion) {
+    //         localStorage.removeItem('hasNewVersion');
+    //         modal
+    //             .alert(
+    //                 Lang.Msgs.version_update_msg2.replace(
+    //                     /%1/gi,
+    //                     lastCheckVersion
+    //                 ),
+    //                 Lang.General.update_title,
+    //                 {
+    //                     positiveButtonText: Lang.General.recent_download,
+    //                     positiveButtonStyle: {
+    //                         width: '180px',
+    //                     },
+    //                 }
+    //             )
+    //             .one('click', (event) => {
+    //                 if (event === 'ok') {
+    //                     shell.openExternal(
+    //                         'https://playentry.org/#!/offlineEditor'
+    //                     );
+    //                 }
+    //             });
+    //     } else {
+    //         ipcRenderer.on(
+    //             'checkUpdateResult',
+    //             (e, { hasNewVersion, version } = {}) => {
+    //                 if (hasNewVersion && version !== lastCheckVersion) {
+    //                     localStorage.setItem('hasNewVersion', hasNewVersion);
+    //                     localStorage.setItem('lastCheckVersion', version);
+    //                 }
+    //             }
+    //         );
+    //         ipcRenderer.send('checkUpdate');
+    //     }
+    // }
     // logger
     var logger = {
         v: function(str) {
