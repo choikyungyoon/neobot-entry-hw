@@ -7,7 +7,7 @@
 	"category": "module",
 	"platform": ["win32", "darwin"],
 	"icon" : "neobot_robot_theme.png",
-	"module": "neobot_robot_theme.js",
+	"module": "neobot_robot_theme_dongle.js",
 	"url": "http://neobot.co.kr/",
 	"email": "neobot@neobot.co.kr",
 	"video": "https://goo.gl/hAXFZT",
