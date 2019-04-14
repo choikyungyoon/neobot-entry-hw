@@ -7,7 +7,7 @@ function Module() {
 		'IN2',
 		'IN3',
 		'IR',
-		'BAT'
+		'IN4'
 	];
 
 	this.REMOTE_MAP = [
@@ -17,7 +17,7 @@ function Module() {
 		'DCL',
 		'DCR',
 		'SND',
-		'FND',
+		'LED',
 		'OPT'
 	];
 }
