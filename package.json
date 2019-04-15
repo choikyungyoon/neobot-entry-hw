@@ -1,7 +1,7 @@
 {
     "name": "neobot_entry_hw",
     "version": "1.6.37",
-    "description": "NEOBOT&ENTRY Connection Program",
+    "description": "NEOBOT HARDWARE",
     "author": "EntryLabs",
     "main": "app/index.js",
     "scripts": {
@@ -16,7 +16,7 @@
     "build": {
         "mac": {
             "target": "dmg",
-            "category": "public.app-category.education", 
+            "category": "public.app-category.education",
             "extendInfo": {
                 "URL Types": [
                     {
@@ -58,7 +58,7 @@
         },
         "asar": true,
         "appId": "org.playentry.entryhw",
-        "productName": "Entry_HW"
+        "productName": "NEOBOT Hardware"
     },
     "devDependencies": {
         "cross-env": "^5.1.3",
