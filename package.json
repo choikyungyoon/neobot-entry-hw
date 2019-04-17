@@ -1,7 +1,7 @@
 {
-    "name": "neobot_entry_hw",
+    "name": "entry_hw",
     "version": "1.6.37",
-    "description": "NEOBOT HARDWARE",
+    "description": "엔트리 하드웨어 연결 프로그램",
     "author": "EntryLabs",
     "main": "app/index.js",
     "scripts": {
@@ -58,7 +58,7 @@
         },
         "asar": true,
         "appId": "org.playentry.entryhw",
-        "productName": "NEOBOT Hardware"
+        "productName": "Entry_HW"
     },
     "devDependencies": {
         "cross-env": "^5.1.3",
@@ -82,6 +82,5 @@
         "object.assign": "^4.0.4",
         "socket.io": "^1.5.0",
         "socket.io-client": "^1.5.1"
-    },
-    "neobot_version": "1.0.0"
+    }
 }
