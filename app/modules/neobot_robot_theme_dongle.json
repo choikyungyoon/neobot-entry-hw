@@ -1,8 +1,8 @@
 {
 	"id": "050302",
 	"name": {
-		"en": "NEOBOT Robot Theme [Dongle Version]",
-		"ko": "네오봇 로봇 테마 [Dongle Version]"
+		"en": "NEOBOT Robot Theme (Dongle Version)",
+		"ko": "네오봇 로봇 테마 (Dongle Version)"
 	},
 	"category": "module",
 	"platform": ["win32", "darwin"],
